@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 
-
 body {
     overflow-y: hidden;
 }
 
-.bg-banner {
+/* #bg-banner {
     background: url(./images/pattern-bg-mobile.png);
     background-size:cover;
     background-repeat: no-repeat;
@@ -14,9 +13,9 @@ body {
 
 
 @media (min-width: 800px) {
-    .bg-banner {
+    #bg-banner {
     background: url(./images/pattern-bg-desktop.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
-}
+} */
