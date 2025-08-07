@@ -10,7 +10,7 @@ import markerShadow from 'leaflet/dist/images/marker-shadow.png';
 import { IoIosArrowForward } from "react-icons/io";
 // Corrigindo os ícones padrão do Leaflet
 
-delete (L.Icon.Default.prototype as any)._getIconUrl;
+// delete (L.Icon.Default.prototype as any)._getIconUrl;
 
 L.Icon.Default.mergeOptions({
   iconRetinaUrl: markerIcon2x,
@@ -123,22 +123,26 @@ function App() {
     }
 
 
-      const UpdateMap = () => {
+    const MapUpdate = () => {
        const map = useMap();
        const {lat, long} =  mapData
        useEffect(()=> {
         map.setView([lat,  long],20)
        },[lat, long, map])
+
+       return null
     }
 
 
  
 
+ 
+
   return (
     <div>
-    <div className="w-full h-[25vh] bg-red-400 flex flex-col justify-center items-center">
+    <div className="w-full h-[40vh] md:h-[35vh] bg-banner flex flex-col justify-center items-center px-2">
       <h1 className='text-[1.7em] font-bold mb-5 text-white'>IP Address Tracker</h1>
-    <form onSubmit={Iptracker} className='w-[35%] h-[45px] pl-4 flex bg-white rounded-[10px]'>
+    <form onSubmit={Iptracker} className='w-[100%] md:w-[50%] lg:w-[35%] h-[45px] pl-4 flex bg-white rounded-[10px]'>
       <input type='text' name='search' placeholder='Search for any IP addressr domain' onChange={handleChange} className='w-[90%] h-full' />
       <button type='submit' className="bg-black text-white w-[10%] rounded-r-[10px] pl-2"><IoIosArrowForward size={27} /></button>
     </form>
@@ -151,7 +155,7 @@ function App() {
   doubleClickZoom={false}
   touchZoom={false}
   keyboard={false} style={{ height: '500px', width: '100%' }}>
-      <UpdateMap />
+     <MapUpdate />
       <TileLayer
        url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
       />
