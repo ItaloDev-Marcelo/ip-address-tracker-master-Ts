@@ -5,17 +5,19 @@ body {
     overflow-y: hidden;
 }
 
-/* #bg-banner {
-    background: url(./images/pattern-bg-mobile.png);
+
+
+ /* .banner {
+    background: url(./assets/images/pattern-bg-mobile.png) ;
     background-size:cover;
     background-repeat: no-repeat;
 }
 
 
 @media (min-width: 800px) {
-    #bg-banner {
-    background: url(./images/pattern-bg-desktop.png);
+    .banner {
+    background: url(./assets/images/pattern-bg-desktop.png);
     background-size:cover;
     background-repeat: no-repeat;
 }
-} */
+}  */
