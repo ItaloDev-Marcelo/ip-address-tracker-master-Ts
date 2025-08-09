@@ -58,12 +58,13 @@ function App() {
   }
 
   return (
-    <div className="relative">
+    <div>
       <Banner>
          <Form submitIp={submitIp} handleInput={handleInput} />
       </Banner>
-          <MapInformationDisplay/>
-
+      <div className="grid place-items-center" >
+      <MapInformationDisplay data={data} />
+      </div>
       <MapDisplay lat={lat} long={long} city={city} />
     </div>
   );

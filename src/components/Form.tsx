@@ -1,17 +1,11 @@
-import React from "react";
 import { IoIosArrowForward } from "react-icons/io";
+import type { Form } from "./types/Form";
 
-interface FormProps {
-    submitIp: (e: React.FormEvent<HTMLFormElement>) =>void,
-    handleInput: (e: React.ChangeEvent<HTMLInputElement>) => void
-}
-
-
-const Form = ({submitIp,handleInput}:FormProps) => {
+const Form = ({submitIp,handleInput}:Form) => {
   return (
     <form
       onSubmit={submitIp}
-      className="w-[100%] md:w-[50%] lg:w-[35%] h-[45px] pl-4 flex bg-white rounded-[10px]"
+      className="w-[100%] mt-[-2em] md:w-[50%] lg:w-[35%] h-[45px] pl-4 flex bg-white rounded-[10px]"
     >
       <input
         type="text"
