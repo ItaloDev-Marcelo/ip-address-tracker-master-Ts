@@ -22,7 +22,7 @@ const MapDisplay = ({lat,long,city}:MapoDisplayProps) => {
   return <div className="max-w-full">
             <MapContainer
               center={[lat, long]}
-              zoom={19}
+              zoom={15}
               zoomControl={false}
               scrollWheelZoom={false}
               doubleClickZoom={false}

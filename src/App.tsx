@@ -50,7 +50,7 @@ function App() {
 
   const submitIp = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (SearchIp) ipTracker(SearchIp);
+    ipTracker(SearchIp);
   };
 
   const handleInput = (e: React.ChangeEvent<HTMLInputElement>) => {

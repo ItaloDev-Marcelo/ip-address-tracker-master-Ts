@@ -1,23 +1,19 @@
 @import "tailwindcss";
 
+@theme {
+  --breakpoint-tb: 50rem;
+}
+
 
 body {
-    overflow-y: hidden;
+     font-family: "Rubik", sans-serif;
 }
 
-
-
- /* .banner {
-    background: url(./assets/images/pattern-bg-mobile.png) ;
-    background-size:cover;
-    background-repeat: no-repeat;
+input:active {
+background:transparent;
 }
 
-
-@media (min-width: 800px) {
-    .banner {
-    background: url(./assets/images/pattern-bg-desktop.png);
-    background-size:cover;
-    background-repeat: no-repeat;
+input:focus {
+    outline: none;
 }
-}  */
+
